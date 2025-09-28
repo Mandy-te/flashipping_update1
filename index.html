@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashipping</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    /* Styles custom si ou vle */
+    body {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <header class="shadow-md fixed top-0 left-0 w-full bg-white z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <img src="logo.png" alt="Flashipping Logo" class="w-10 h-10 object-contain" />
+        <span class="text-xl font-bold text-blue-700">Flashipping</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#home" class="hover:text-blue-600">Akèy</a>
+        <a href="#services" class="hover:text-blue-600">Sèvis</a>
+        <a href="#calculator" class="hover:text-blue-600">Kalkilatris</a>
+        <a href="#sign" class="hover:text-blue-600">Kreye Kont</a>
+        <a href="#contact" class="hover:text-blue-600">Kontak</a>
+      </nav>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden flex flex-col px-4 pb-4 space-y-2 bg-white">
+      <a href="#home" class="hover:text-blue-600">Akèy</a>
+      <a href="#services" class="hover:text-blue-600">Sèvis</a>
+      <a href="#calculator" class="hover:text-blue-600">Kalkilatris</a>
+      <a href="#sign" class="hover:text-blue-600">Kreye Kont</a>
+      <a href="#contact" class="hover:text-blue-600">Kontak</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center bg-blue-50 relative" data-aos="fade-up">
+      <h1 class="text-4xl font-bold text-blue-800 mb-4">Flashipping — Livrezon Entènasyonal ou ka Konfyans</h1>
+      <p class="text-gray-700 mb-6">Nou pote kago ou soti Miami pou Ayiti avèk transparans ak sekirite.</p>
+      
